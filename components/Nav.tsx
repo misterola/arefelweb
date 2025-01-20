@@ -18,7 +18,11 @@ const Nav = () => {
   const navItems = [
     { id: 1, text: "About", link: "/about" },
     { id: 2, text: "FAQ", link: "/faq" },
-    { id: 3, text: "Join Waitlist", link: "/joinwaitlist" },
+    {
+      id: 3,
+      text: "Join Waitlist",
+      link: "https://forms.zohopublic.com/infoare1/form/ArefelWaitlist/formperma/2-xblnApSXKXISCMQcGc_0pzCMsHmJ94pEHF7BSUAhk",
+    },
   ];
 
   return (
@@ -39,6 +43,7 @@ const Nav = () => {
         {navItems.map((item) => (
           <li key={item.id}>
             <Link
+              target="_blank"
               className={
                 item.text === "Join Waitlist"
                   ? "inline-flex items-center decoration-transparent bg-[#e8a600] hover:text-white border-0 px-2 lg:py-2 lg:mr-6 focus:outline-none hover:bg-[#4f6806] rounded-lg text-base mt-4 md:mt-0 list-none"

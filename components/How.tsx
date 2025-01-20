@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function How() {
   return (
     <div className="mb-10">
@@ -74,9 +75,13 @@ export default function How() {
           </div>
         </div>
         <div className="lg:flex lg:flex-row lg:justify-center lg:-mt-6">
-          <button className="flex text-white bg-[rgb(79,104,6)] lg:self-center border-0 py-2 px-3 focus:outline-none hover:bg-gray-400 rounded text-lg">
+          <Link
+            target="_blank"
+            href="https://forms.zohopublic.com/infoare1/form/ArefelWaitlist/formperma/2-xblnApSXKXISCMQcGc_0pzCMsHmJ94pEHF7BSUAhk"
+            className="flex text-white bg-[rgb(79,104,6)] lg:self-center border-0 py-2 px-3 focus:outline-none hover:bg-gray-400 rounded text-lg"
+          >
             Request a Demo
-          </button>
+          </Link>
         </div>
       </section>
     </div>

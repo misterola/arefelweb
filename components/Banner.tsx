@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Banner() {
   return (
     <div className="flex lg:flex-row lg:-mt-36 lg:justify-between lg:items-center px-5 flex-col-reverse mb-20">
@@ -12,9 +13,13 @@ export default function Banner() {
           }
         </div>
         <div className="lg:mt-7 mt-5">
-          <button className="flex text-white bg-[rgb(79,104,6)] border-0 py-2 px-8 focus:outline-none hover:bg-gray-400 rounded text-lg">
+          <Link
+            href="https://forms.zohopublic.com/infoare1/form/ArefelWaitlist/formperma/2-xblnApSXKXISCMQcGc_0pzCMsHmJ94pEHF7BSUAhk"
+            target="_blank"
+            className="flex text-white bg-[rgb(79,104,6)] border-0 py-2 px-8 focus:outline-none hover:bg-gray-400 rounded text-lg lg:w-[160px]"
+          >
             Join Waitlist
-          </button>
+          </Link>
         </div>
       </div>
       <div className="lg:w-5/12">
